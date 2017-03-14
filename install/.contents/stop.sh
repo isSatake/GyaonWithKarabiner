@@ -10,4 +10,4 @@ SERVER=${SERVERSTR:-"https://gyaon.herokuapp.com"}
 
 kill $(cat "$HOME"/.gyaon/rec.pid) 
 lame "$HOME"/.gyaon/tmp.wav "$HOME"/.gyaon/out.mp3
-curl -F file=@"$HOME"/.gyaon/out.mp3 "$SERVER"/upload
+curl -F file=@"$HOME"/.gyaon/out.mp3 "$SERVER"/upload/"$GYAONID"
